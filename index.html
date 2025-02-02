@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="profile-card">
+      <img
+        src="https://placeholder.svg?height=150&width=150"
+        alt="Profile Picture"
+        data-testid="profilePicture"
+        class="profile-picture"
+      />
+      <h1 data-testid="fullName">Teniola Timothy</h1>
+      <h2 data-testid="jobTitle">Frontend Developer</h2>
+      <p data-testid="shortBio">
+        Passionate about creating elegant and efficient web solutions. With a
+        keen eye for detail and a love for clean code, I strive to build
+        user-friendly applications that make a difference.
+      </p>
+      <p data-testid="currentLocation" class="icon-text">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Osogbo, Osun state, Nigeria.</span>
+      </p>
+      <p data-testid="emailAddress" class="icon-text">
+        <i class="fas fa-envelope"></i>
+        <span>teniolatimothy@gmail.com</span>
+      </p>
+      <div data-testid="socialLinks" class="social-links">
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub Profile"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitter Profile"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      <p data-testid="currentTimeUTC" id="currentTime"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
